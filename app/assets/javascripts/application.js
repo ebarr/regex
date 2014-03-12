@@ -20,8 +20,7 @@ $(function() {
         var value = $(this).val();
         // var userMatch = new RegExp(_________);
         // var match = ___________;
-        var name = new RegExp("^[A-Z][a-z]+ [A-Z][a-z]+$");
-        var match = name.test(value);
+  
         if (match) {
             $(this).closest('.form-group').removeClass('has-error');
         } else {
