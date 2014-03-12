@@ -16,8 +16,11 @@
 $(function() {
     var textInputs = $('input').not('[type=radio]');
 
+    var birthMonthRegEx = /(March|April)/;
+
     textInputs.focusout(function(e) {
         var value = $(this).val();
+<<<<<<< HEAD
         // var userMatch = new RegExp(_________);
         // var match = ___________;
 
@@ -25,6 +28,14 @@ $(function() {
         var match = userCreditCard.test(value);
 
         if (match) {
+=======
+        var fieldID = $(this).attr('id');
+        var reString = $(this).data('regex');
+        var re = new RegExp(reString);
+        var doesItMatch = re.test(value);
+
+        if (doesItMatch) {
+>>>>>>> master
             $(this).closest('.form-group').removeClass('has-error');
         } else {
             $(this).closest('.form-group').addClass('has-error');
