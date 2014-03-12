@@ -16,6 +16,8 @@
 $(function() {
     var textInputs = $('input').not('[type=radio]');
 
+    var birthMonthRegEx = /March/;
+
     textInputs.focusout(function(e) {
         var value = $(this).val();
         // var userMatch = new RegExp(_________);
