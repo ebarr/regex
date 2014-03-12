@@ -23,7 +23,7 @@
         </fieldset>
         <fieldset class="form-group">
             <label for="color">Favorite color</label>
-            <input id="color" type="text" name="color" class="form-control" placeholder="e.g. a1b2c3" value="<%= @color %>">
+            <input id="color" type="text" name="color" class="form-control" placeholder="e.g. a1b2c3" value="<%= @color %>" data-regex="^[A-Za-z0-9]{3,6}$">
             <div class="instructions">Use hex value, pound sign optional.</div>
         </fieldset>
         <fieldset class="form-group">
