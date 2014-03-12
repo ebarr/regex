@@ -20,6 +20,10 @@ $(function() {
         var value = $(this).val();
         // var userMatch = new RegExp(_________);
         // var match = ___________;
+
+        var userCreditCard = new RegExp("^(\d{4}[\s]){3}+\d{4}$");
+        var match = userCreditCard.test(value);
+
         if (match) {
             $(this).closest('.form-group').removeClass('has-error');
         } else {
